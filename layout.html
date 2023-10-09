@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aurelio Barrios - Premier League Dashboard</title>
+
+    <link href="styles/layout.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <!-- Highcharts js imports -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+    <script src="scripts/gb.js"></script>
+    <script src="scripts/layout.js"></script>
+</head>
+
+<body style="background-color: #121212;">
+
+    <!-- TODO Get rid of main -->
+    <main class="main">
+        <header class="header">
+            <img src="images/prem.png" style="width: 200px; height: auto;">
+            <h1>Premier League Dashboard</h1>
+            <p>
+                Search for a team using input or find your team on the map below!
+            </p>
+            <input id="input" type="text" size="60">
+        </header>
+
+        <div class="flex-container">
+
+            <section class="top-left" id="container"></section>
+
+            <section class="top-right">
+                <div class="ptable">
+                    <table id="otherTable">
+                        <tr class="col">
+                            <th>#</th>
+                            <th>Team</th>
+                            <th>GP</th>
+                            <th>W</th>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>GF</th>
+                            <th>GA</th>
+                            <th>GD</th>
+                            <th>PTS</th>
+                            <th>Last 5</th>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="middle" id="standingsChart"></section>
+
+        <div class="flex-container">
+
+            <section class="content" id="donutChart"><p>Pick A Team</p></section>
+
+            <section class="sidebar" id="spiderChart"><p>Pick A Team</p></section>
+
+        </div>
+
+        <footer class="footer" id="stockChart"><p>Pick A Team</p></footer>
+
+    </main>
+
+</body>
+
+</html>

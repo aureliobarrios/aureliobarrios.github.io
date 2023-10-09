@@ -1,0 +1,422 @@
+{
+    "Arsenal": {
+        "toolDict": {
+            "Off Target": "7th best in league",
+            "On Target": "5th best in league",
+            "Goals": "5th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                185
+            ],
+            [
+                "On Target",
+                105
+            ],
+            [
+                "Goals",
+                33
+            ]
+        ]
+    },
+    "Aston Villa": {
+        "toolDict": {
+            "Off Target": "14th best in league",
+            "On Target": "16th best in league",
+            "Goals": "9th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                153
+            ],
+            [
+                "On Target",
+                75
+            ],
+            [
+                "Goals",
+                27
+            ]
+        ]
+    },
+    "Brentford": {
+        "toolDict": {
+            "Off Target": "6th best in league",
+            "On Target": "12th best in league",
+            "Goals": "12th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                142
+            ],
+            [
+                "On Target",
+                81
+            ],
+            [
+                "Goals",
+                24
+            ]
+        ]
+    },
+    "Brighton": {
+        "toolDict": {
+            "Off Target": "15th best in league",
+            "On Target": "11th best in league",
+            "Goals": "16th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                174
+            ],
+            [
+                "On Target",
+                81
+            ],
+            [
+                "Goals",
+                21
+            ]
+        ]
+    },
+    "Burnley": {
+        "toolDict": {
+            "Off Target": "16th best in league",
+            "On Target": "20th best in league",
+            "Goals": "19th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                124
+            ],
+            [
+                "On Target",
+                57
+            ],
+            [
+                "Goals",
+                16
+            ]
+        ]
+    },
+    "Chelsea": {
+        "toolDict": {
+            "Off Target": "5th best in league",
+            "On Target": "3rd best in league",
+            "Goals": "3rd best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                206
+            ],
+            [
+                "On Target",
+                118
+            ],
+            [
+                "Goals",
+                45
+            ]
+        ]
+    },
+    "Crystal Palace": {
+        "toolDict": {
+            "Off Target": "17th best in league",
+            "On Target": "15th best in league",
+            "Goals": "8th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                164
+            ],
+            [
+                "On Target",
+                75
+            ],
+            [
+                "Goals",
+                30
+            ]
+        ]
+    },
+    "Everton": {
+        "toolDict": {
+            "Off Target": "12th best in league",
+            "On Target": "13th best in league",
+            "Goals": "13th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                154
+            ],
+            [
+                "On Target",
+                78
+            ],
+            [
+                "Goals",
+                24
+            ]
+        ]
+    },
+    "Leeds": {
+        "toolDict": {
+            "Off Target": "18th best in league",
+            "On Target": "8th best in league",
+            "Goals": "11th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                193
+            ],
+            [
+                "On Target",
+                88
+            ],
+            [
+                "Goals",
+                24
+            ]
+        ]
+    },
+    "Leicester": {
+        "toolDict": {
+            "Off Target": "1st best in league",
+            "On Target": "10th best in league",
+            "Goals": "7th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                121
+            ],
+            [
+                "On Target",
+                87
+            ],
+            [
+                "Goals",
+                31
+            ]
+        ]
+    },
+    "Liverpool": {
+        "toolDict": {
+            "Off Target": "8th best in league",
+            "On Target": "2nd best in league",
+            "Goals": "1st best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                260
+            ],
+            [
+                "On Target",
+                146
+            ],
+            [
+                "Goals",
+                55
+            ]
+        ]
+    },
+    "Man City": {
+        "toolDict": {
+            "Off Target": "4th best in league",
+            "On Target": "1st best in league",
+            "Goals": "2nd best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                254
+            ],
+            [
+                "On Target",
+                150
+            ],
+            [
+                "Goals",
+                54
+            ]
+        ]
+    },
+    "Man United": {
+        "toolDict": {
+            "Off Target": "10th best in league",
+            "On Target": "6th best in league",
+            "Goals": "6th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                175
+            ],
+            [
+                "On Target",
+                98
+            ],
+            [
+                "Goals",
+                32
+            ]
+        ]
+    },
+    "Newcastle": {
+        "toolDict": {
+            "Off Target": "19th best in league",
+            "On Target": "18th best in league",
+            "Goals": "17th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                158
+            ],
+            [
+                "On Target",
+                66
+            ],
+            [
+                "Goals",
+                20
+            ]
+        ]
+    },
+    "Norwich": {
+        "toolDict": {
+            "Off Target": "20th best in league",
+            "On Target": "19th best in league",
+            "Goals": "20th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                152
+            ],
+            [
+                "On Target",
+                63
+            ],
+            [
+                "Goals",
+                10
+            ]
+        ]
+    },
+    "Southampton": {
+        "toolDict": {
+            "Off Target": "11th best in league",
+            "On Target": "7th best in league",
+            "Goals": "10th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                170
+            ],
+            [
+                "On Target",
+                91
+            ],
+            [
+                "Goals",
+                25
+            ]
+        ]
+    },
+    "Tottenham": {
+        "toolDict": {
+            "Off Target": "2nd best in league",
+            "On Target": "9th best in league",
+            "Goals": "14th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                133
+            ],
+            [
+                "On Target",
+                88
+            ],
+            [
+                "Goals",
+                23
+            ]
+        ]
+    },
+    "Watford": {
+        "toolDict": {
+            "Off Target": "9th best in league",
+            "On Target": "14th best in league",
+            "Goals": "15th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                139
+            ],
+            [
+                "On Target",
+                78
+            ],
+            [
+                "Goals",
+                23
+            ]
+        ]
+    },
+    "West Ham": {
+        "toolDict": {
+            "Off Target": "3rd best in league",
+            "On Target": "4th best in league",
+            "Goals": "4th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                173
+            ],
+            [
+                "On Target",
+                106
+            ],
+            [
+                "Goals",
+                41
+            ]
+        ]
+    },
+    "Wolves": {
+        "toolDict": {
+            "Off Target": "13th best in league",
+            "On Target": "17th best in league",
+            "Goals": "18th best in league"
+        },
+        "data": [
+            [
+                "Off Target",
+                138
+            ],
+            [
+                "On Target",
+                68
+            ],
+            [
+                "Goals",
+                17
+            ]
+        ]
+    }
+}

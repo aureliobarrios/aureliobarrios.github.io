@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" /> -->
+
+    <!-- <script src="scripts/main.js"></script> -->
+    <title> Aurelio Barrios Personal</title>
+
+    <style>
+        * {
+            /* This allowed the two columns to fit onto the page properly */
+            /* allows us to include the padding and border in an elements total
+            width and height */
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            /* This made sure that the body filled the entire page rather than having gaps */
+            margin: 0;
+            /* background: #34568B; */
+            /* background: #424242; */
+            background: white;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            /* This made the header box bigger */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            /* This removed the overlapping between the column and topnav */
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            /* made the elements stack next to each other */
+            float: left;
+            /* new line and takes up whole width */
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            /* Changed the size of the links */
+            padding: 14px 16px;
+            /* removed the underlines */
+            text-decoration: none;
+        }
+
+        /* Changes the color of the topnav a elements when hovered over */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .leftcolumn {
+            /* This moved everything from left column to left and right to right */
+            float: left;
+            width: 75%;
+            /* background-color: red; */
+            padding-left: 20px;
+        }
+
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            /* background-color: blue; */
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #rcorners3 {
+            /* background-color: #f1f1f1; */
+            background-color: #FBFBFB;
+            border-radius: 15px;
+        }
+
+        #rcorners4 {
+            /* previous color #EEEEEE */
+            background-color: #FBFBFB;
+            border-radius: 15px 50px;
+        }
+
+        .topics {
+            color: #808080;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        /* adds a responsive layout */
+        @media screen and (max-width:800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Aurelio Barrios</h1>
+        <p>aubarrios142@gmail.com</p>
+    </div>
+
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <!-- TEST -->
+        <a href="./layout.html" target="_blank">Dashboard</a>
+        <a href="https://aureliobarrios.pythonanywhere.com/" target="_blank">Twitch Recommender</a>
+        <!-- TEST -->
+        <a href="./resume/aurelioBarrios.pdf" target="_blank" style="float: right;">Resume</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div id="rcorners4" class="card">
+                <h2>Building A Fair ML Model Using Fairlearn For Loan Acceptance Prediction</h2>
+                <h4>Maintaining Accuracy While Providing Fairness In Loan Acceptance For Sensitive Attributes
+                    Like Race & Sex - June 12, 2021</h4>
+                <!-- <div class="imgone"></div> -->
+                <p>Ensuring machine learning models are fair should be a main priority by those implementing
+                    them, but it is often overlooked. This project aims to solve that problem by showing
+                    how a machine learning model can be both accurate and fair. This project equalizes
+                    loan selection rates across different races whilst also maintaining accuracy in its
+                    loan predictions using HMDA California 2017 data.</p>
+                <a style="text-decoration: none;" href="https://github.com/aubarrio/MyPortfolio/tree/main/Fairlearn"
+                    target="_blank">GitHub Repository</a> | <a style="text-decoration: none;" href="./blog.html"
+                    target="_blank">Blog</a>
+                <hr>
+                <p class="topics">&#9745; pandas &#9745; fairlearn package &#9745; ML model &#9745; Ethical ML model
+                    building &#9745; Data wrangling</p>
+            </div>
+
+            <div id="rcorners4" class="card">
+                <h2>Premier League Interactive Dashboard From Scratch Using Highcharts</h2>
+                <h4>Implemented a Data Visualization Dashboard For The Current Premier League Season Using JavaScript -
+                    Jan 18, 2022</h4>
+                <p>This project was aimed at implementing a data visualization dashboard from scratch. Rather than use
+                    software
+                    that builds dashboards for you, I implemented one using JavaScript and the Highcharts library. This
+                    dashboard aims to provide statistics on teams for the current Premier League season. Using the
+                    Python pandas
+                    package the original csv files were converted to json files for each visualization. With HTML and
+                    CSS it was
+                    possible to outline the dashboard to fit all visualizations.
+                </p>
+                <a style="text-decoration: none;" href="https://github.com/aubarrio/MyPortfolio/tree/main/Dashboard"
+                    target="_blank">GitHub Repository</a> | <a style="text-decoration: none;" href="./layout.html"
+                    target="_blank">Dashboard</a>
+                <hr>
+                <p class="topics">&#9745; HTML &#9745; CSS &#9745; JavaScript &#9745; Data Visualization &#9745;
+                    Highcharts &#9745; Pandas</p>
+            </div>
+
+            <div id="rcorners4" class="card">
+                <h2>Twitch Streamer Recommender System From Scratch</h2>
+                <h4>Building A Recommender System For Twitch Streamers Using Twitter Scraped Data w/ Website - Feb 1, 2022</h4>
+                <p>
+                    In this project a Twitch streamer recommender system is built using item based collaborative filtering.
+                    The data for this recommender system is scraped off Twitter using the tweepy Twitter API. Data collected 
+                    is a series of connections between users that follow twitch streamers. Each account that the user is following
+                    is collected to establish connections between streamers followed by the same person. These connections are 
+                    then evaluated and used to recommend new streamers that a user might like. The recommendor system is then deployed
+                    onto a website using Flask. Feel free to check out the website below. If you want to see the inner workings of the 
+                    recommendor system check out the GitHub repository.
+                </p>
+                <a style="text-decoration: none;" href="https://github.com/aubarrio/MyPortfolio/tree/main/RecommenderSystems"
+                    target="_blank">GitHub Repository</a> | <a style="text-decoration: none;" href="https://aureliobarrios.pythonanywhere.com/"
+                    target="_blank">Recommender</a>
+                <hr>
+                <p class="topics">&#9745; Twitter Scraping &#9745; Flask Deployment &#9745; Recommendor Systems &#9745;
+                    Machine Learning </p>
+            </div>
+
+            <div id="rcorners4" class="card">
+                <h2>A Complete Machine Learning Project with Python</h2>
+                <h4>A Rudimentary Approach to Kaggle Machine Learning Competitions - Dec 15, 2021</h4>
+                <p>The aim of this project is to show a rudimentary approach to a machine learning task from
+                    start to finish. This project should provide the basics on which one can build upon to meet
+                    their machine learning needs. This project shows how to visualize a datasets features,
+                    build upon those features and ultimately build a machine learning model that converges and
+                    does not overfit a dataset. For more information on the <a style="text-decoration: none;"
+                        href="https://www.kaggle.com/c/tabular-playground-series-dec-2021" target="_blank">kaggle</a>
+                    competion visit the link.
+                </p>
+                <a style="text-decoration: none;" href="https://github.com/aubarrio/MyPortfolio/tree/main/Kaggle"
+                    target="_blank">GitHub Repository</a>
+                <hr>
+                <p class="topics">&#9745; pandas &#9745; TensorFlow &#9745; Sklearn &#9745; Feature Engineering &#9745;
+                    Data wrangling</p>
+            </div>
+
+            <!-- <div id="rcorners4" class="card">
+                <h2>Premier League Dashboard From Scratch Using Highcharts</h2>
+                <h4>Implemented a Data Visualization Dashboard For The Current Premier League Season Using JavaScript - Jan 18, 2022</h4>
+                <div class="fakeimg" style="height: 200px;">Image - changes made</div>
+                <p>Some text..</p>
+                <p>Insert paragraph here</p>
+                <a href="https://www.google.com" target="_blank">This is a link!</a>
+            </div> -->
+        </div>
+        <div class="rightcolumn">
+            <div id="rcorners3" class="card">
+                <!-- <h2>About Me</h2> -->
+                <!-- <div class="fakeimg" style="height: 100px;">Image</div> -->
+                <img src="./images/profilePicture.JPG" style="height: 350px; width: auto;">
+                <h3>Message From Me</h3>
+                <p>Eager to kickstart my career. Feel free to email me any time, regarding anything you found
+                    interesting. Thanks for taking the time to look
+                    through my personal website.</p>
+            </div>
+            <div id="rcorners3" class="card">
+                <h3>Popular Posts I Find Interesting</h3>
+                <p>Collection of blogs, articles, videos or anything I find interesting at the moment</p>
+                <ul>
+                    <li>
+                        Video (24 min): <a style="text-decoration: none;"
+                            href="https://www.youtube.com/watch?v=R_nzV8n_PvM" target="_blank">Brentford
+                            money ball documentary</a>
+                    </li>
+                    <br>
+                    <li>
+                        Article: <a style="text-decoration: none;"
+                            href="https://fivethirtyeight.com/features/possession-is-the-puzzle-of-soccer-analytics-these-models-are-trying-to-solve-it/"
+                            target="_blank">FiveThirtyEight article on possession in Soccer</a>
+                    </li>
+                    <br>
+                    <li>
+                        Video (90 min): <a style="text-decoration: none;"
+                            href="https://www.youtube.com/watch?v=WXuK6gekU1Y" target="_blank">DeepMind AlphaGo
+                            Documentary</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="fakeimg">
+                    <p>Image</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Image</p>
+                </div> -->
+            </div>
+            <div id="rcorners3" class="card">
+                <h3>Follow Me</h3>
+                <p>Look for me on <a style="text-decoration: none;" href="https://www.linkedin.com/in/aurelio-barrios/"
+                        target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

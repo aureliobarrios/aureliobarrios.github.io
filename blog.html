@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title> FairLearn Blog</title>
+
+    <style>
+        * {
+            font-family: 'Roboto', 'sans-serif';
+        }
+
+        p {
+            line-height: 2em;
+        }
+
+        #blog-body {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+        }
+
+        #img-caption {
+            color: grey;
+            width: 75%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #img-one {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 400px) {
+            #blog-body {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 95%;
+            }
+
+            #img-caption {
+                color: grey;
+                width: 95%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            #img-one {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body style="padding-bottom: 100px;">
+    <div id="blog-body">
+        <h1>Building A Fair Machine Learning Model For Loan Acceptance Prediction</h1>
+        <h3>Tackling Biased Datasets With Demographic Parity</h3>
+        <p style="color: grey;">By: Aurelio Barrios | Jan 14, 2022 &bull; 8 min read</p>
+        <p>
+            The field of Data Science has exploded in recent years. From Netflix recommendations, self driving cars and
+            even mortgage loans; Data Science and its algorithms are being used on a daily basis. With this field being
+            in its infancy there comes a lot of hype as well as a lot of uncharted territory. Data Science as a tool is
+            a double edged sword. AI being deployed in the real world is highly innovative but also dangerous especially
+            when these algorithms are being deployed to make sensitive decisions.
+        </p>
+        <h2>Surely, Machines Eliminate Human Bias</h2>
+        <p>
+            It is easy to think that since algorithms are not necessarily human then therefore they are incapable of
+            being biased. After all, most of these algorithms are highly complex and trained on tons of data. Well this
+            isn't necessarily the case, there are plenty of examples on how AI algorithms can be extremely unfair and in
+            some cases borderline racist. This is not to say that the human behind the algorithm is manually creating
+            and inserting these biases in the algorithm, but somewhere along the algorithm pipeline something is going
+            extremely wrong.
+        </p>
+        <p>
+            In May of 2016, <a style="text-decoration: none;"
+                href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+                target="_blank">ProPublica published</a> an informative article on how the Correctional Offender
+            Management Profiling for Alternative Sanctions (COMPAS) tool -used to assess the likelihood of an offender
+            committing a future crime- was biased against blacks. The article found that this algorithm was incorrectly
+            predicting that black defendants were twice as likely to reoffend than white defendants.
+        </p>
+        <p>
+            Most recently in 2021, <a style="text-decoration: none;"
+                href="https://themarkup.org/denied/2021/08/25/the-secret-bias-hidden-in-mortgage-approval-algorithms"
+                target="_blank"> TheMarkup reported </a> on the bias found in mortgage loan approval
+            algorithms. They found that people of color were 40% to 80% more likely to be denied a loan when compared to
+            white individuals. The article uses the Home Mortgage Disclosure Act (HMDA) data that is now public to come
+            to their conclusion.
+        </p>
+        <p>
+            Although we cannot fault the individuals behind these algorithms for falsely believing that lines of code
+            are not biased, we can demand more from the teams deploying these algorithms. It is the responsibility of
+            the deployment team to ensure that these models are reviewed and proven to be fair before they go out to the
+            real world. It is no longer enough to simply create and deploy. Modern models should meet an ethical
+            standard especially those that make life altering decisions.
+        </p>
+        <h2>Tackling Bias In Prediction Algorithms</h2>
+        <p>
+            The aim of this project is to tackle the bias found in mortgage loan approval algorithms. In order to do
+            this we must build our own machine learning predictor. This predictor will use historical mortgage approval
+            data to predict whether new applicants will get approved. Since this algorithm will be allocating resources
+            such as a home, it is essential that this algorithm is fair for all individuals.
+        </p>
+        <p>
+            When building such a sensitive model it is critical that we understand what real world bias is being
+            captured in the training dataset. A machine learning model is not aimed at being biased. But if we train on
+            data that is biased, we cannot expect to create a machine learning algorithm that is not biased. For this
+            model we will be using the California HMDA data from 2017. It does not take much data exploration to see
+            that this dataset is capturing some real world bias.
+        </p>
+        <img id="img-one" src="./images/observed_rates.png">
+        <div id="img-caption">
+            <p>Observed Loan Acceptance Rates By Race for California HMDA 2017 Dataset</p>
+        </div>
+        <p>
+            It is not hard to notice that there is a significant difference between the acceptance rates for each race.
+            White and Asian individuals have a mortgage acceptance rate higher than 80%, while the rest have an observed
+            acceptance rate of around 70%. In order to prevent <a style="text-decoration: none;"
+                href="https://www.google.com/search?q=allocative+harm+definition&sxsrf=AOaemvL_yqJOKGVfQxERD2mSgLJUMUfEkQ%3A1642786537591&ei=6e7qYYa_I4egptQP-Z2s8A4&oq=allocative+harm+def&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCCEQoAE6BwgAEEcQsAM6BggAEBYQHjoFCCEQqwJKBAhBGABKBAhGGABQhhBYnhJg_htoBXACeACAAZ8BiAHiBJIBAzAuNJgBAKABAcgBBcABAQ&sclient=gws-wiz"
+                target="_blank">allocative harm</a> within our model we should hope
+            that our model does not have a significant difference in selection rates by race. After all, race should not
+            have any weight on the acceptance decision.
+        </p>
+        <h2>Baseline Model, Accuracy Metric</h2>
+        <p>
+            When it comes to prediction algorithms there is a huge emphasis on accuracy. The goal of the game is how to
+            make a model as accurate as possible. It is only those models that are highly accurate that are being
+            deployed to the real world. Using this ideal we build a baseline model that achieves an 89.6% accuracy on
+            the test dataset. This model shows us that there is a huge fault in thinking that accuracy should be the
+            only metric that is relevant.
+        </p>
+        <img src="./images/basem_error.png">
+        <div id="img-caption">
+            <p>Initial Baseline Machine Learning Prediction Model Error Rates For Test Set Predictions</p>
+        </div>
+        <img src="./images/basem_selection.png">
+        <div id="img-caption">
+            <p>Initial Baseline ML Prediction Model Selection Rates For Test Set Predictions</p>
+        </div>
+        <p>
+            When we consider that this model was built on biased data we recognize that accuracy here means modeling the
+            bias found in the dataset. We see how the model is very accurate across race selection. This also means that
+            the acceptance rates follow the same distribution as those found in the real world. This is a huge problem.
+        </p>
+        <h2>Better Model, Fairness Metric</h2>
+        <p>
+            When we build models on biased data we enter a vicious never ending cycle. This is because the very same
+            prejudice that is being captured in the data used to train, will then be reinforced with a machine learning
+            model that will be the basis for future datasets. When these models make a prediction, these predictions are
+            then recorded as data points which will then train future models. Biased datasets create biased predictions
+            models which then further create biased datasets.
+        </p>
+        <p>
+            Every machine learning model should implement a fairness metric. Using the <a style="text-decoration: none;"
+                href="https://www.google.com/search?q=what+is+demographic+parity&sxsrf=AOaemvKqNDBeK7JtDlAdW4SZykG9u_NoJQ%3A1642786544291&ei=8O7qYbGjEb6eptQPoI-40AI&ved=0ahUKEwix26fjsMP1AhU-j4kEHaAHDioQ4dUDCA4&uact=5&oq=what+is+demographic+parity&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEOgcIIxCwAxAnOgcIABBHELADOgUIABCRAjoECAAQQzoLCAAQgAQQsQMQgwE6CAgAELEDEIMBOg4ILhCABBCxAxDHARCjAjoRCC4QgAQQsQMQgwEQxwEQowI6BAgjECc6CAgAEIAEELEDOggIABCABBDJAzoGCAAQFhAeSgQIQRgASgQIRhgAUOIKWLQnYM4saAFwAngBgAGqBIgBmh-SAQgwLjI1LjUtMZgBAKABAcgBBMABAQ&sclient=gws-wiz"
+                target="_blank">demographic parity</a>
+            fairness metric we build a model that has a respectable 84.5% accuracy on the test set whilst also being
+            fair.
+        </p>
+        <img src="./images/betterm_error.png">
+        <div id="img-caption">
+            <p>Demographic Parity ML Prediction Model Error Rates For Test Set Predictions</p>
+        </div>
+        <img src="./images/betterm_selection.png">
+        <div id="img-caption">
+            <p>Demographic Parity ML Prediction Model Selection Rates For Test Set Predictions</p>
+        </div>
+        <p>
+            We must recognize that there exists a tradeoff between fairness and accuracy. This is because we cannot
+            expect a fair model to be exactly accurate when it is being trained on unfair data. There is a 5.1%
+            difference between our first unfair model and our second fair model. This is a minor price to pay for a
+            model that is 142.857% fairer (calculated using demographic parity difference of both models: 0.18 & 0.03).
+            The keypoint here is noticing that there is no significant difference in the selection rates between
+            different races.
+        </p>
+        <h2>Fairness Should Not Be Overlooked</h2>
+        <p>
+            When we build a model that is fair we end the vicious cycle of creating datasets that parallel biases found
+            in the real world. We must move away from the idea of prioritizing accuracy in a model. It is entirely
+            acceptable to sacrifice some accuracy for better fairness because sometimes being accurate means modeling
+            and deploying the biases of the past. Fairness in a model should not be a feature that is only present in a
+            few models, it also should not be something that is only done in research. Every model being deployed to the
+            real world should be required to have an implemented fairness metric. If not we will be stuck with the
+            discrimination of the past.
+        </p>
+        <hr>
+        <p>
+            Thanks for reading!
+        </p>
+        <p>
+            For a more in-depth look at this project feel free to check out this projects <a
+                style="text-decoration: none;" href="https://github.com/aubarrio/MyPortfolio/tree/main/Fairlearn"
+                target="_blank">GitHub repository</a> which includes
+            code and a report.
+        </p>
+
+    </div>
+</body>
+
+</html>

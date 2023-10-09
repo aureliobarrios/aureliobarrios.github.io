@@ -1,0 +1,442 @@
+{
+    "Arsenal": {
+        "seriesData": [
+            {
+                "data": [
+                    15,
+                    33,
+                    8,
+                    17,
+                    25,
+                    18
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "6th best in league",
+            "Home Conceded": "4th best in league",
+            "Away Scored": "5th best in league",
+            "Away Conceded": "11th best in league",
+            "Total Scored": "5th best in league",
+            "Total Conceded": "7th best in league"
+        }
+    },
+    "Aston Villa": {
+        "seriesData": [
+            {
+                "data": [
+                    10,
+                    27,
+                    16,
+                    16,
+                    32,
+                    17
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "7th best in league",
+            "Home Conceded": "14th best in league",
+            "Away Scored": "13th best in league",
+            "Away Conceded": "10th best in league",
+            "Total Scored": "9th best in league",
+            "Total Conceded": "12th best in league"
+        }
+    },
+    "Brentford": {
+        "seriesData": [
+            {
+                "data": [
+                    12,
+                    24,
+                    12,
+                    21,
+                    33,
+                    12
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "15th best in league",
+            "Home Conceded": "12th best in league",
+            "Away Scored": "11th best in league",
+            "Away Conceded": "16th best in league",
+            "Total Scored": "12th best in league",
+            "Total Conceded": "14th best in league"
+        }
+    },
+    "Brighton": {
+        "seriesData": [
+            {
+                "data": [
+                    12,
+                    21,
+                    10,
+                    11,
+                    21,
+                    9
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "17th best in league",
+            "Home Conceded": "7th best in league",
+            "Away Scored": "10th best in league",
+            "Away Conceded": "5th best in league",
+            "Total Scored": "16th best in league",
+            "Total Conceded": "6th best in league"
+        }
+    },
+    "Burnley": {
+        "seriesData": [
+            {
+                "data": [
+                    8,
+                    16,
+                    8,
+                    19,
+                    27,
+                    8
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "18th best in league",
+            "Home Conceded": "3rd best in league",
+            "Away Scored": "17th best in league",
+            "Away Conceded": "14th best in league",
+            "Total Scored": "19th best in league",
+            "Total Conceded": "8th best in league"
+        }
+    },
+    "Chelsea": {
+        "seriesData": [
+            {
+                "data": [
+                    20,
+                    45,
+                    10,
+                    7,
+                    17,
+                    25
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "3rd best in league",
+            "Home Conceded": "9th best in league",
+            "Away Scored": "3rd best in league",
+            "Away Conceded": "2nd best in league",
+            "Total Scored": "3rd best in league",
+            "Total Conceded": "3rd best in league"
+        }
+    },
+    "Crystal Palace": {
+        "seriesData": [
+            {
+                "data": [
+                    10,
+                    30,
+                    12,
+                    19,
+                    31,
+                    20
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "5th best in league",
+            "Home Conceded": "11th best in league",
+            "Away Scored": "14th best in league",
+            "Away Conceded": "13th best in league",
+            "Total Scored": "8th best in league",
+            "Total Conceded": "11th best in league"
+        }
+    },
+    "Everton": {
+        "seriesData": [
+            {
+                "data": [
+                    9,
+                    24,
+                    16,
+                    18,
+                    34,
+                    15
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "11th best in league",
+            "Home Conceded": "15th best in league",
+            "Away Scored": "15th best in league",
+            "Away Conceded": "12th best in league",
+            "Total Scored": "11th best in league",
+            "Total Conceded": "16th best in league"
+        }
+    },
+    "Leeds": {
+        "seriesData": [
+            {
+                "data": [
+                    11,
+                    24,
+                    16,
+                    23,
+                    39,
+                    13
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "13th best in league",
+            "Home Conceded": "16th best in league",
+            "Away Scored": "12th best in league",
+            "Away Conceded": "18th best in league",
+            "Total Scored": "13th best in league",
+            "Total Conceded": "18th best in league"
+        }
+    },
+    "Leicester": {
+        "seriesData": [
+            {
+                "data": [
+                    15,
+                    31,
+                    12,
+                    21,
+                    33,
+                    16
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "9th best in league",
+            "Home Conceded": "10th best in league",
+            "Away Scored": "6th best in league",
+            "Away Conceded": "17th best in league",
+            "Total Scored": "7th best in league",
+            "Total Conceded": "15th best in league"
+        }
+    },
+    "Liverpool": {
+        "seriesData": [
+            {
+                "data": [
+                    30,
+                    55,
+                    6,
+                    12,
+                    18,
+                    25
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "2nd best in league",
+            "Home Conceded": "2nd best in league",
+            "Away Scored": "1st best in league",
+            "Away Conceded": "6th best in league",
+            "Total Scored": "1st best in league",
+            "Total Conceded": "4th best in league"
+        }
+    },
+    "Man City": {
+        "seriesData": [
+            {
+                "data": [
+                    22,
+                    54,
+                    6,
+                    7,
+                    13,
+                    32
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "1st best in league",
+            "Home Conceded": "1st best in league",
+            "Away Scored": "2nd best in league",
+            "Away Conceded": "1st best in league",
+            "Total Scored": "2nd best in league",
+            "Total Conceded": "1st best in league"
+        }
+    },
+    "Man United": {
+        "seriesData": [
+            {
+                "data": [
+                    15,
+                    32,
+                    15,
+                    14,
+                    29,
+                    17
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "8th best in league",
+            "Home Conceded": "13th best in league",
+            "Away Scored": "7th best in league",
+            "Away Conceded": "8th best in league",
+            "Total Scored": "6th best in league",
+            "Total Conceded": "9th best in league"
+        }
+    },
+    "Newcastle": {
+        "seriesData": [
+            {
+                "data": [
+                    6,
+                    20,
+                    23,
+                    20,
+                    43,
+                    14
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "12th best in league",
+            "Home Conceded": "20th best in league",
+            "Away Scored": "19th best in league",
+            "Away Conceded": "15th best in league",
+            "Total Scored": "17th best in league",
+            "Total Conceded": "19th best in league"
+        }
+    },
+    "Norwich": {
+        "seriesData": [
+            {
+                "data": [
+                    3,
+                    10,
+                    20,
+                    25,
+                    45,
+                    7
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "20th best in league",
+            "Home Conceded": "18th best in league",
+            "Away Scored": "20th best in league",
+            "Away Conceded": "20th best in league",
+            "Total Scored": "20th best in league",
+            "Total Conceded": "20th best in league"
+        }
+    },
+    "Southampton": {
+        "seriesData": [
+            {
+                "data": [
+                    12,
+                    25,
+                    9,
+                    24,
+                    33,
+                    13
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "14th best in league",
+            "Home Conceded": "6th best in league",
+            "Away Scored": "9th best in league",
+            "Away Conceded": "19th best in league",
+            "Total Scored": "10th best in league",
+            "Total Conceded": "13th best in league"
+        }
+    },
+    "Tottenham": {
+        "seriesData": [
+            {
+                "data": [
+                    7,
+                    23,
+                    10,
+                    10,
+                    20,
+                    16
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "10th best in league",
+            "Home Conceded": "8th best in league",
+            "Away Scored": "18th best in league",
+            "Away Conceded": "4th best in league",
+            "Total Scored": "14th best in league",
+            "Total Conceded": "5th best in league"
+        }
+    },
+    "Watford": {
+        "seriesData": [
+            {
+                "data": [
+                    12,
+                    23,
+                    22,
+                    15,
+                    37,
+                    11
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "16th best in league",
+            "Home Conceded": "19th best in league",
+            "Away Scored": "8th best in league",
+            "Away Conceded": "9th best in league",
+            "Total Scored": "15th best in league",
+            "Total Conceded": "17th best in league"
+        }
+    },
+    "West Ham": {
+        "seriesData": [
+            {
+                "data": [
+                    19,
+                    41,
+                    18,
+                    12,
+                    30,
+                    22
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "4th best in league",
+            "Home Conceded": "17th best in league",
+            "Away Scored": "4th best in league",
+            "Away Conceded": "7th best in league",
+            "Total Scored": "4th best in league",
+            "Total Conceded": "10th best in league"
+        }
+    },
+    "Wolves": {
+        "seriesData": [
+            {
+                "data": [
+                    9,
+                    17,
+                    8,
+                    7,
+                    15,
+                    8
+                ]
+            }
+        ],
+        "toolDict": {
+            "Home Scored": "19th best in league",
+            "Home Conceded": "5th best in league",
+            "Away Scored": "16th best in league",
+            "Away Conceded": "3rd best in league",
+            "Total Scored": "18th best in league",
+            "Total Conceded": "2nd best in league"
+        }
+    }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" /> -->
+
+    <!-- <script src="scripts/main.js"></script> -->
+    <title> Aurelio Barrios Personal</title>
+
+    <style>
+        * {
+            /* This allowed the two columns to fit onto the page properly */
+            /* allows us to include the padding and border in an elements total
+            width and height */
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            /* This made sure that the body filled the entire page rather than having gaps */
+            margin: 0;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+        ul {
+            display: inline-block;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            /* This made the header box bigger */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .topnav {
+            /* This removed the overlapping between the column and topnav */
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            /* made the elements stack next to each other */
+            float: left;
+            /* new line and takes up whole width */
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            /* Changed the size of the links */
+            padding: 14px 16px;
+            /* removed the underlines */
+            text-decoration: none;
+        }
+
+        /* Changes the color of the topnav a elements when hovered over */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .column {
+            /* rather than top and bottom they are now next to each other */
+            float: left;
+            /* there is some space between them now */
+            width: 50%;
+            /*  */
+            padding: 15px;
+            padding-left: 20px;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* TEST */
+        #skills {
+            float: left;
+            width: 33%;
+        }
+
+        /* TEST */
+
+        /* adds a responsive layout */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+
+            /* TEST */
+            #skills {
+                float: none;
+                width: 100%;
+            }
+
+            /* TEST */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Aurelio Barrios</h1>
+        <p>aubarrios142@gmail.com</p>
+    </div>
+
+    <div class="topnav">
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <!-- TEST -->
+        <a href="./layout.html" target="_blank">Dashboard</a>
+        <a href="https://aureliobarrios.pythonanywhere.com/" target="_blank">Twitch Recommender</a>
+        <!-- TEST -->
+        <a href="./resume/aurelioBarrios.pdf" target="_blank" style="float: right;">Resume</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>About Me</h2>
+            <p>Hello! My name is Aurelio Barrios but you can also call me Ari.</p>
+            <br>
+            <p>I am a recent first generation college graduate aiming to gain experience and break into the
+                tech field.
+            </p>
+            <br>
+            <p>
+                Passionate and curious about a lot things, especially anything dealing with data.
+            </p>
+            <br>
+            <p>My first love and ultimate passion is soccer and aspire to work for professional soccer teams
+                combining two of my passions data and soccer.</p>
+            <br>
+            <p>
+                When I'm not watching FC Barcelona or playing soccer myself I am programming. Whether it be
+                Python, HTML or SQL I find programming and problem solving therapeutic. </p>
+            <br>
+            <p>Other interests include:</p>
+            <ul>
+                <br>
+                <li>Learning new programming languages, packages and technologies</li>
+                <br>
+                <li>Video Games (really good at FIFA)</li>
+                <br>
+                <li>Really interested in eSports and the livestreaming space e.g. Twitch</li>
+                <br>
+                <li>Reading Fiction and Non-Fiction</li>
+                <br>
+                <li>Anything Game of Thrones, Star Wars or MCU related</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h2>Skills & Education</h2>
+            <img src="./images/ucsd-logo.png" class="img" style="width: 200px; height: auto;">
+            <h3 style="text-align: center;">Bachelor of Data Science, University of California - San Diego</h3>
+            <p>Eager to add some experience to my
+                <a style="text-decoration: none;" href="./resume/aurelioBarrios.pdf" target="_blank">resume</a>!
+                Feel free to email me anytime. Another way to connect with me would be through my
+                <a style="text-decoration: none;" href="https://www.linkedin.com/in/aurelio-barrios/"
+                    target="_blank">LinkedIn Page</a>. Link to my <a style="text-decoration: none;"
+                    href="https://github.com/aubarrio" target="_blank">GitHub Page</a> where my Portfolio projects are
+                stored. Here are some of my skills, not in any particular order.
+            </p>
+            <div id="skills">
+                <p>Programming Languages</p>
+                <ul>
+                    <li>Python</li>
+                    <br>
+                    <li>R</li>
+                    <br>
+                    <li>SQL</li>
+                    <br>
+                    <li>HTML</li>
+                    <br>
+                    <li>JavaScript</li>
+                    <br>
+                    <li>CSS</li>
+                </ul>
+            </div>
+            <div id="skills">
+                <p>Technologies</p>
+                <ul>
+                    <li>AWS</li>
+                    <br>
+                    <li>Docker</li>
+                    <br>
+                    <li>Git</li>
+                    <br>
+                    <li>Jupyter Notebook</li>
+                    <br>
+                    <li>Flask</li>
+                    <br>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+            <div id="skills">
+                <p>Python Packages</p>
+                <ul>
+                    <li>Pandas</li>
+                    <br>
+                    <li>NumPy</li>
+                    <br>
+                    <li>TensorFlow</li>
+                    <br>
+                    <li>PyTorch</li>
+                    <br>
+                    <li>Scikit-Learn</li>
+                    <br>
+                    <li>Keras</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

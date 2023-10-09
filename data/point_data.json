@@ -1,0 +1,162 @@
+[
+    {
+        "id": "Arsenal",
+        "name": "Emirates Stadium ",
+        "cap": 60361,
+        "val": 13,
+        "lat": 51.555,
+        "lon": -0.108611
+    },
+    {
+        "id": "Aston Villa",
+        "name": "Villa Park ",
+        "cap": 42785,
+        "val": 7,
+        "lat": 52.509167,
+        "lon": -1.884722
+    },
+    {
+        "id": "Brentford",
+        "name": "Brentford Community Stadium",
+        "cap": 17250,
+        "val": 0,
+        "lat": 51.4907,
+        "lon": -0.2892
+    },
+    {
+        "id": "Brighton",
+        "name": "American Express Community Stadium ",
+        "cap": 22374,
+        "val": 0,
+        "lat": 50.861822,
+        "lon": -0.083278
+    },
+    {
+        "id": "Burnley",
+        "name": "Turf Moor ",
+        "cap": 22546,
+        "val": 2,
+        "lat": 53.789167,
+        "lon": -2.230278
+    },
+    {
+        "id": "Chelsea",
+        "name": "Stamford Bridge ",
+        "cap": 42449,
+        "val": 6,
+        "lat": 51.481667,
+        "lon": -0.191111
+    },
+    {
+        "id": "Crystal Palace",
+        "name": "Selhurst Park ",
+        "cap": 26309,
+        "val": 0,
+        "lat": 51.398333,
+        "lon": -0.085556
+    },
+    {
+        "id": "Everton",
+        "name": "Goodison Park ",
+        "cap": 40157,
+        "val": 9,
+        "lat": 53.438889,
+        "lon": -2.966389
+    },
+    {
+        "id": "Leeds",
+        "name": "Elland Road ",
+        "cap": 39460,
+        "val": 3,
+        "lat": 53.777778,
+        "lon": -1.572222
+    },
+    {
+        "id": "Leicester",
+        "name": "King Power Stadium ",
+        "cap": 32500,
+        "val": 1,
+        "lat": 52.620278,
+        "lon": -1.142222
+    },
+    {
+        "id": "Liverpool",
+        "name": "Anfield ",
+        "cap": 45276,
+        "val": 19,
+        "lat": 53.430819,
+        "lon": -2.960828
+    },
+    {
+        "id": "Man City",
+        "name": "Etihad Stadium",
+        "cap": 47405,
+        "val": 7,
+        "lat": 53.482989,
+        "lon": -2.200292
+    },
+    {
+        "id": "Man United",
+        "name": "Old Trafford ",
+        "cap": 75811,
+        "val": 20,
+        "lat": 53.463056,
+        "lon": -2.291389
+    },
+    {
+        "id": "Newcastle",
+        "name": "Sports Direct Arena",
+        "cap": 52409,
+        "val": 4,
+        "lat": 54.975556,
+        "lon": -1.621667
+    },
+    {
+        "id": "Norwich",
+        "name": "Carrow Road ",
+        "cap": 27010,
+        "val": 0,
+        "lat": 52.622128,
+        "lon": 1.308653
+    },
+    {
+        "id": "Southampton",
+        "name": "St Mary's Stadium ",
+        "cap": 32689,
+        "val": 0,
+        "lat": 50.905833,
+        "lon": -1.391111
+    },
+    {
+        "id": "Tottenham",
+        "name": "White Hart Lane ",
+        "cap": 36230,
+        "val": 2,
+        "lat": 51.603333,
+        "lon": -0.065833
+    },
+    {
+        "id": "Watford",
+        "name": "Vicarage Road ",
+        "cap": 23500,
+        "val": 0,
+        "lat": 51.649836,
+        "lon": -0.401486
+    },
+    {
+        "id": "West Ham",
+        "name": "Boleyn Ground ",
+        "cap": 35303,
+        "val": 0,
+        "lat": 51.531944,
+        "lon": 0.039444
+    },
+    {
+        "id": "Wolves",
+        "name": "Molineux Stadium ",
+        "cap": 27828,
+        "val": 3,
+        "lat": 52.590278,
+        "lon": -2.130278
+    }
+]
