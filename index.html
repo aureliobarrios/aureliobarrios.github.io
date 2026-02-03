@@ -1,239 +1,245 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" /> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avilas Detailing</title>
 
-    <!-- <script src="scripts/main.js"></script> -->
-    <title> Aurelio Barrios Personal</title>
+  <style>
+    /* Global Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <style>
-        * {
-            /* This allowed the two columns to fit onto the page properly */
-            /* allows us to include the padding and border in an elements total
-            width and height */
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0f1115;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
 
-        body {
-            /* This made sure that the body filled the entire page rather than having gaps */
-            margin: 0;
-        }
+    /* Page Wrapper */
+    .page {
+      width: 100%;
+      padding: 24px;
+    }
 
-        p {
-            font-size: 17px;
-        }
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
 
-        ul {
-            display: inline-block;
-        }
+    .logo,
+    .header-pic {
+      width: 120px;
+      height: 80px;
+      border: 2px dashed #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: #aaa;
+    }
 
-        .header {
-            background-color: #f1f1f1;
-            /* This made the header box bigger */
-            padding: 20px;
-            text-align: center;
-        }
+    h1 {
+      font-size: 42px;
+      text-align: center;
+      flex: 1;
+      font-family: cursive;
+    }
 
-        .topnav {
-            /* This removed the overlapping between the column and topnav */
-            overflow: hidden;
-            background-color: #333;
-        }
+    /* Sub Header */
+    .sub-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 40px;
+      font-size: 16px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+    }
 
-        .topnav a {
-            /* made the elements stack next to each other */
-            float: left;
-            /* new line and takes up whole width */
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            /* Changed the size of the links */
-            padding: 14px 16px;
-            /* removed the underlines */
-            text-decoration: none;
-        }
+    .sub-header .right {
+      text-align: right;
+      font-weight: bold;
+    }
 
-        /* Changes the color of the topnav a elements when hovered over */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 40px 0 24px;
+    }
 
-        .column {
-            /* rather than top and bottom they are now next to each other */
-            float: left;
-            /* there is some space between them now */
-            width: 50%;
-            /*  */
-            padding: 15px;
-            padding-left: 20px;
-        }
+    /* Videos */
+    .videos {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-        .img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 30%;
-        }
+    .video-box {
+      width: 100%;
+      max-width: 520px;
+      aspect-ratio: 16 / 9;
+      border: 2px dashed #555;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      background: #151821;
+    }
 
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    .work-description {
+      text-align: center;
+      margin: 28px 0;
+      font-size: 16px;
+      color: #ddd;
+    }
 
-        /* TEST */
-        #skills {
-            float: left;
-            width: 33%;
-        }
+    /* Price List */
+    .price-section {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
 
-        /* TEST */
+    .price-box {
+      width: 100%;
+      max-width: 360px;
+      background: #151821;
+      border-radius: 14px;
+      padding: 24px;
+      border: 1px solid #2a2f3a;
+    }
 
-        /* adds a responsive layout */
-        @media screen and (max-width:600px) {
-            .column {
-                width: 100%;
-            }
-        }
+    .price-box h3 {
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
 
-        @media screen and (max-width: 400px) {
-            .topnav a {
-                float: none;
-                width: 100%;
-            }
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #2a2f3a;
+      font-size: 16px;
+    }
 
-            /* TEST */
-            #skills {
-                float: none;
-                width: 100%;
-            }
+    .price-row:last-child {
+      border-bottom: none;
+    }
 
-            /* TEST */
-        }
-    </style>
+    .icon {
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 5px solid white;
+        border-radius: 100%;
+    }
+
+    .icon::after {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin: 1px 0 0 -6px;
+        display: block;
+        content: '';
+        border: 6px solid transparent;
+        border-top: 10px solid white;
+        border-bottom: none;
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .header {
+        flex-direction: column;
+      }
+
+      .sub-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sub-header .right {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <div class="page">
+
+    <!-- Header -->
     <div class="header">
-        <h1>Aurelio Barrios</h1>
-        <p>aubarrios142@gmail.com</p>
+      <div class="logo">logo.png</div>
+      <h1>Avilas Detailing</h1>
+      <div class="header-pic">pic.png</div>
     </div>
 
-    <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./portfolio.html">Portfolio</a>
-        <!-- TEST -->
-        <a href="./layout.html" target="_blank">Dashboard</a>
-        <a href="https://aureliobarrios.pythonanywhere.com/" target="_blank">Twitch Recommender</a>
-        <!-- TEST -->
-        <a href="./resume/Aurelio-Barrios-Resume.pdf" target="_blank" style="float: right;">Resume</a>
+    <!-- Sub Header -->
+    <div class="sub-header">
+      <div>
+        <strong>We come to you!</strong><br />
+        <i class="icon"></i> Inland Empire
+      </div>
+      <div class="right">
+        Text or Call For Bookings<br />
+        (123) 456-7890
+      </div>
     </div>
 
-    <div class="row">
-        <div class="column">
-            <h2>About Me</h2>
-            <p>Hello! My name is Aurelio Barrios but you can also call me Ari.</p>
-            <br>
-            <p>I am a recent first generation college graduate aiming to gain experience and break into the
-                tech field.
-            </p>
-            <br>
-            <p>
-                Passionate and curious about a lot things, especially anything dealing with data.
-            </p>
-            <br>
-            <p>My first love and ultimate passion is soccer and aspire to work for professional soccer teams
-                combining two of my passions data and soccer.</p>
-            <br>
-            <p>
-                When I'm not watching FC Barcelona or playing soccer myself I am programming. Whether it be
-                Python, HTML or SQL I find programming and problem solving therapeutic. </p>
-            <br>
-            <p>Other interests include:</p>
-            <ul>
-                <br>
-                <li>Learning new programming languages, packages and technologies</li>
-                <br>
-                <li>Video Games (really good at FIFA)</li>
-                <br>
-                <li>Really interested in eSports and the livestreaming space e.g. Twitch</li>
-                <br>
-                <li>Reading Fiction and Non-Fiction</li>
-                <br>
-                <li>Anything Game of Thrones, Star Wars or MCU related</li>
-            </ul>
+    <!-- Previous Work -->
+    <h2 class="section-title">Previous Work</h2>
+
+    <div class="videos">
+      <div class="video-box">YouTube Video</div>
+      <div class="video-box">YouTube Video</div>
+    </div>
+
+    <div class="work-description">
+      We work on cars, boats, trucks, SUV's, RV's, semis, etc...
+    </div>
+
+    <!-- Price List -->
+    <div class="price-section">
+      <div class="price-box">
+        <h3>Price List</h3>
+
+        <div class="price-row">
+          <span>SUV's</span>
+          <span>$100</span>
         </div>
 
-        <div class="column">
-            <h2>Skills & Education</h2>
-            <img src="./images/ucsd-logo.png" class="img" style="width: 200px; height: auto;">
-            <h3 style="text-align: center;">Bachelor of Data Science, University of California - San Diego</h3>
-            <p>Eager to add some experience to my
-                <a style="text-decoration: none;" href="./resume/Aurelio-Barrios-Resume.pdf" target="_blank">resume</a>!
-                Feel free to email me anytime. Another way to connect with me would be through my
-                <a style="text-decoration: none;" href="https://www.linkedin.com/in/aurelio-barrios/"
-                    target="_blank">LinkedIn Page</a>. Link to my <a style="text-decoration: none;"
-                    href="https://github.com/aureliobarrios" target="_blank">GitHub Page</a> where my Portfolio projects are
-                stored. Here are some of my skills, not in any particular order.
-            </p>
-            <div id="skills">
-                <p>Programming Languages</p>
-                <ul>
-                    <li>Python</li>
-                    <br>
-                    <li>R</li>
-                    <br>
-                    <li>SQL</li>
-                    <br>
-                    <li>HTML</li>
-                    <br>
-                    <li>JavaScript</li>
-                    <br>
-                    <li>CSS</li>
-                </ul>
-            </div>
-            <div id="skills">
-                <p>Technologies</p>
-                <ul>
-                    <li>AWS</li>
-                    <br>
-                    <li>Docker</li>
-                    <br>
-                    <li>Git</li>
-                    <br>
-                    <li>Jupyter Notebook</li>
-                    <br>
-                    <li>Flask</li>
-                    <br>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-            <div id="skills">
-                <p>Python Packages</p>
-                <ul>
-                    <li>Pandas</li>
-                    <br>
-                    <li>NumPy</li>
-                    <br>
-                    <li>TensorFlow</li>
-                    <br>
-                    <li>PyTorch</li>
-                    <br>
-                    <li>Scikit-Learn</li>
-                    <br>
-                    <li>Keras</li>
-                </ul>
-            </div>
+        <div class="price-row">
+          <span>Cars</span>
+          <span>$60</span>
         </div>
+
+        <div class="price-row">
+          <span>Boats</span>
+          <span>$160</span>
+        </div>
+      </div>
     </div>
+
+  </div>
 
 </body>
-
 </html>
