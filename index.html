@@ -63,6 +63,30 @@
             flex-direction: column;
         }
 
+        /* CHANGES */
+        .icon {
+            box-sizing: border-box;
+            position: relative;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 5px solid white;
+            border-radius: 100%;
+        }
+
+        .icon::after {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin: 1px 0 0 -6px;
+            display: block;
+            content: '';
+            border: 6px solid transparent;
+            border-top: 10px solid white;
+            border-bottom: none;
+        }
+        /* CHANGES */
+
         .logo {
             width: 120px;
             height: 120px;
@@ -412,8 +436,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Premium Car Detailing Services</h2>
-            <p>Transform your vehicle with our professional detailing services. We specialize in automobile, SUV, and boat detailing with attention to every detail.</p>
+            <h2>Premium Detailing Services</h2>
+            <p>Transform your vehicle with our professional detailing services. We specialize in automobile, SUV's, trailer and boat detailing with attention to every detail.</p>
+            <p>We will come to you! Text or call for bookings and more information.</p>
+            <p>(562) 251-7878</p>
+            <p><i class="icon"></i> Inland Empire</p>
             <a href="#pricing" class="btn">View Our Services</a>
         </div>
     </section>
@@ -422,35 +449,35 @@
     <section class="gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Our Work</h2>
+                <h2>View Our Previous Work</h2>
             </div>
             <div class="gallery-container">
                 <div class="gallery-wrapper">
                     <div class="gallery-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://youtube.com/embed/9T9pmY1xFx0?si=a92Y0GlbIeqAwpeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video-info">
-                            <h3>Full Detailing Process</h3>
-                            <p>Complete exterior and interior detailing of a luxury sedan</p>
+                            <h3>Full Interior Detail On Semi</h3>
+                            <p>Complete interior detail on a Semi truck.</p>
                         </div>
                     </div>
                     <div class="gallery-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://youtube.com/embed/NjhEN61dhTM?si=aQ5FBCtwvLhAn90P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video-info">
-                            <h3>SUV Restoration</h3>
-                            <p>Deep cleaning and detailing of a family SUV</p>
+                            <h3>Full Exterior/Interior Detail</h3>
+                            <p>A deep cleaning and detailing of a family SUV.</p>
                         </div>
                     </div>
                     <div class="gallery-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://youtube.com/embed/Kn6MdJoTOso?si=mmeoKvusVlsRwJ5F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="video-info">
-                            <h3>Boat Detailing</h3>
-                            <p>Professional marine detailing of a luxury yacht</p>
+                            <h3>Detail Compilation</h3>
+                            <p>A look at some of the work we have done this past year.</p>
                         </div>
                     </div>
                 </div>
@@ -474,20 +501,26 @@
             </div>
             <div class="pricing-cards">
                 <div class="pricing-card">
-                    <h3>Automobile</h3>
-                    <div class="price">$150<span>/vehicle</span></div>
+                    <h3>Coupe/Sedan</h3>
+                    <div class="price">$100*<span>/vehicle</span></div>
                     <ul>
                         <li>Exterior wash & dry</li>
                         <li>Wax & polish</li>
                         <li>Interior vacuum & wipe</li>
                         <li>Dashboard cleaning</li>
                         <li>Tire shine</li>
+                        <li>Glass cleaning</li>
                     </ul>
                     <a href="#" class="btn">Book Now</a>
+                    <br>
+                    <br>
+                    <p>*Prices may vary depending on condition of vehicle</p>
+                    <br>
+                    <p>Ask about our weekly maintenance package for our regular customers!</p>
                 </div>
                 <div class="pricing-card">
                     <h3>SUV & Truck</h3>
-                    <div class="price">$200<span>/vehicle</span></div>
+                    <div class="price">$200*<span>/vehicle</span></div>
                     <ul>
                         <li>Full exterior wash & dry</li>
                         <li>Wax & polish</li>
@@ -497,10 +530,15 @@
                         <li>Headlight restoration</li>
                     </ul>
                     <a href="#" class="btn">Book Now</a>
+                    <br>
+                    <br>
+                    <p>*Prices may vary depending on condition of vehicle</p>
+                    <br>
+                    <p>Ask about our weekly maintenance package for our regular customers!</p>
                 </div>
                 <div class="pricing-card">
                     <h3>Boat & RV</h3>
-                    <div class="price">$250<span>/vehicle</span></div>
+                    <div class="price">$250*<span>/vehicle</span></div>
                     <ul>
                         <li>Exterior cleaning & wax</li>
                         <li>Deck scrubbing & shine</li>
@@ -510,24 +548,47 @@
                         <li>Windows & mirrors cleaning</li>
                     </ul>
                     <a href="#" class="btn">Book Now</a>
+                    <br>
+                    <br>
+                    <p>*Prices may vary depending on condition of vehicle</p>
+                    <br>
+                    <p>Ask about our weekly maintenance package for our regular customers!</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- <section class="extras">
+        <div class="container">
+            <div class="section-title">
+                <h2>Extras</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Pet Hair</h3>
+                    <div class="price">$30<span>/vehicle</span></div>
+                    <ul>
+                        <li>Deep pet hair removal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/channel/UC45lacEiWZ_m1-NFSHp6TjA" target="_blank"><i class="fab fa-youtube"></i></a>
             </div>
+            <p>Give your car the shine it needs!</p>
             <p>Contact us for a free quote</p>
-            <p>Phone: (123) 456-7890 | Email: info@avilasdetailing.com</p>
+            <p>Phone: (562) 251-7878 | Email: avilanator01@gmail.com</p>
             <div class="copyright">
-                &copy; 2023 Avilas Detailing. All rights reserved.
+                &copy; 2026 Avilas Detailing. All rights reserved.
             </div>
         </div>
     </footer>
@@ -556,10 +617,10 @@
             });
 
             // Auto-rotate every 5 seconds
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % cards.length;
-                updateCarousel();
-            }, 5000);
+            // setInterval(() => {
+            //     currentIndex = (currentIndex + 1) % cards.length;
+            //     updateCarousel();
+            // }, 5000);
         });
     </script>
 </body>
