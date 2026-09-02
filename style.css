@@ -9,6 +9,19 @@
     --font-career: 'Poppins', sans-serif;
 }
 
+/* --- Dark Mode Overrides --- */
+body.dark-mode {
+    --text-color: #e0e0e0; /* Light text for dark background */
+    --white: #2c2f33; /* Slightly off-black for card elements */
+    --dark-bg: #1f2125; /* Even darker background for footer/hero */
+    --light-bg: #282c31; /* Dark grey background for section separation */
+    --primary-color: #4dabff; /* Lighter blue for better contrast in dark mode */
+    --secondary-color: #99a0b0; /* Lighter grey */
+}
+
+/* Global Styles and Variables */
+/* ... (rest of the original file) ... */
+
 /* Reset and Base */
 * {
     box-sizing: border-box;
